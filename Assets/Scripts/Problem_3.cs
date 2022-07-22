@@ -18,5 +18,11 @@ public class Problem_3 : MonoBehaviour
     {
         string[] names = new string[6]{ "Clark", "Bruce", "Diana", "Barry", "Hal", "Arthur"};
         List<string> indexedNames = new List<string>();
+        int a = 0;
+        for (a = 0; a < names.Length; a++)
+        {
+            indexedNames.Add(a + 1 + ". " + names[a]);
+            print(indexedNames[a]);
+        }
     }
 }
